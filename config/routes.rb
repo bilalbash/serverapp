@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'application#welcome'
 
+  get '/download/agent', to: 'application#download_agent', as: 'download_agent'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
